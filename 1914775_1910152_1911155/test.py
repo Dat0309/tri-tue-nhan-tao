@@ -11,8 +11,8 @@
 #     TenBien = kieuDuLieu(giaTri)
 #     str,
 #     int, float, complex,
-#     list, tuple, range, dict, set, frozenset, bool,
-#     bytes, bytearray, memoryview
+#     bool,...
+#     bytes,...
 # '''
 
 # dat = str("Dat dep trai")
