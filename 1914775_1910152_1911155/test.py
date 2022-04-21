@@ -43,7 +43,8 @@ def addStudent():
     print('THEM SINH VIEN')
     infor ={
         'id' : '',
-        'name' :''
+        'name' :'',
+        'age':0
     }
     
     # Nhap ID
