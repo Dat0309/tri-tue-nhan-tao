@@ -1,0 +1,36 @@
+1 Layers
+ - Convolutional(tích chập)
+	+ Một cửa dạng trượt nằm trên một ma trận
+	+ Những Convolutional layer được học để điều chỉnh và lấy ra những thông tin chính xác
+	  nhất mà không cần phải chọn feature
+	+ Là nhân cá phần tử trong ma trận
+	+ Sliding Windown còn được trong gọi là kernel, flilter là loại ma trận có kích thước nhỏ
+ - Maxpooling
+	+ Lớp pooling thường được sử dụng ngay sau lớp convulational để đơn giản hóa 
+      thông tin đầu ra để giảm bớt số lượng neuron.
+	+ Thủ tục pooling phổ biến là max-pooling, thủ tục này chọn giá trị lớn nhất 
+	trong vùng đầu vào 2×2.
+	+ qua lớp Max Pooling thì số lượng neuron giảm đi phân nửa. Trong một mạng CNN 
+	có nhiều Feature Map nên mỗi Feature Map chúng ta sẽ cho mỗi Max Pooling khác 
+	nhau.
+ - Flatten
+	+ Flatten là một loại hoạt động reshape cụ thể trong đó tất cả các axes được 
+làm phẳng ( smooshed) hoặc ghép lại (squashed ) với nhau.
+ - Dense
+	+Dense layer hay Fully-connected layer là một lớp cổ điển trong mạng nơ ron nhân tạo.
+      + Mỗi nơ ron nhận đầu vào từ tất cả nơ ron lớp trước đó
+
+2 Activation function
+ - Relu(Rectified Linear Unit)
++ Là một thành phần của một tế bào thần 
+kinh nhân tạo trong các mạng thần kinh nhân tạo (ANN), chức năng kích hoạt là
+ trách nhiệm xử lý đầu vào trọng và giúp đỡ để cung cấp một sản lượng.
++ ReLU: Đơn vị tuyến tính chỉnh lưu (Đơn vị sử dụng bộ chỉnh lưu còn được gọi là 
+đơn vị tuyến tính được chỉnh lưu ReLU) có đầu ra 0 nếu đầu vào 
+nhỏ hơn 0 và nếu đầu vào lớn hơn 0, đầu ra bằng đầu vào.
+
+ - Sigmoid
+Một hàm sigmoid là một hàm bị chặn, hàm số khả vi, hàm thực mà được định nghĩa cho
+ tất cả giá trị thực và chứa một đạo hàm không âm ở mỗi điểm[1] và có chính xác một
+ điểm uốn cong (điểm quan trọng làm cho hàm có hình chữ S). 
+Một hàm sigmoid và một cường cong sigmoid đều nói về cùng một đối tượng giống nhau.
